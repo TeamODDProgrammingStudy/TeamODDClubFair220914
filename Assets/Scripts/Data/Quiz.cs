@@ -4,10 +4,9 @@ using UnityEngine;
 namespace Data
 {
     [Serializable]
-    [CreateAssetMenu(fileName = "Quiz",menuName = "Data/Quiz")]
-    public class Quiz : ScriptableObject
+    public class Quiz
     {
-        public int QuizCode;
+        //public int QuizCode;
         [TextArea]public string Question;
         [TextArea]public string[] Selection;
         public int Answer;

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25924b18d409406c86e88387d5c167b9, type: 3}
+  m_Name: QuizList
+  m_EditorClassIdentifier: 
+  LolQuizzes:
+  - Question: "\uB4DC\uB808\uC774\uBE10\uACFC \uD615\uC81C\uC778 \uCC54\uD53C\uC5B8\uC740?"
+    Selection:
+    - "\uC77C\uB77C\uC624\uC774"
+    - "\uB2E4\uB9AC\uC6B0\uC2A4"
+    - "\uAC00\uB80C"
+    - "\uB098\uC11C\uC2A4"
+    - "\uC6B0\uB514\uB974"
+    Answer: 2
+  - Question: "\uB098\uC11C\uC2A4\uC758 Q\uC2A4\uD0AC\uB85C \uB300\uD3EC\uBBF8\uB2C8\uC5B8\uC744
+      \uCC98\uCE58\uD558\uBA74 \uBA87 \uC2A4\uD0DD\uC774 \uC313\uC77C\uAE4C\uC694?"
+    Selection:
+    - "3\uC2A4\uD0DD"
+    - "6\uC2A4\uD0DD"
+    - "9\uC2A4\uD0DD"
+    - "12\uC2A4\uD0DD"
+    - "15\uC2A4\uD0DD"
+    Answer: 4
+  - Question: "\uB9AC\uADF8\uC624\uBE0C\uB808\uC804\uB4DC\uB97C \uB9CC\uB4E0 \uD68C\uC0AC
+      \uC774\uB984\uC740?"
+    Selection:
+    - "\uD314\uCF58\uD380\uCE58"
+    - "\uBE14\uB9AC\uC790\uB4DC"
+    - "\uB77C\uC774\uC5C7"
+    - "\uC720\uBE44\uC18C\uD504\uD2B8"
+    - "\uD384\uC5B4\uBE44\uC2A4"
+    Answer: 3
+  - Question: "\uB9C8\uC2A4\uD130\uC774\uAC00 \uC0AC\uC6A9\uD558\uB294 \uAC80\uC220
+      \uC774\uB984\uC740?"
+    Selection:
+    - "\uB871\uC18C\uB4DC \uAC80\uC220"
+    - "\uACF5\uD5C8\uB958 \uAC80\uC220"
+    - "\uBCF8\uAD6D \uAC80\uC220"
+    - "\uD53C\uC624\uB808"
+    - "\uC6B0\uC8FC\uB958 \uAC80\uC220"
+    Answer: 5
+  - Question: "\uB2E4\uC74C \uC911 \uACF5\uD5C8 \uCD9C\uC2E0 \uCC54\uD53C\uC5B8\uC774
+      \uC544\uB2CC \uAC83\uC740?"
+    Selection:
+    - "\uCD08\uAC00\uC2A4"
+    - "\uB809\uC0AC\uC774"
+    - "\uBCA1\uC2A4"
+    - "\uCE74\uC774\uC0AC"
+    - "\uBCA8\uCF54\uC988"
+    Answer: 3
+  - Question: "\uC624\uACF5\uC758 \uC2A4\uC2B9\uC740?"
+    Selection:
+    - "\uC774\uC18C\uB8E1"
+    - "\uB9C8\uC2A4\uD130 \uC774"
+    - "\uC138\uD2B8"
+    - "\uC4F0\uB808\uC26C"
+    - "\uB9D0\uD30C\uC774\uD2B8"
+    Answer: 2
+  - Question: "\uD0C8\uB9AC\uC57C\uC758 \uC2A4\uC2B9\uC740?"
+    Selection:
+    - "\uC57C\uC2A4\uC624"
+    - "\uC694\uB124"
+    - "\uB808\uB125\uD1A4"
+    - "\uCE74\uB974\uB9C8"
+    - "\uC544\uC9C0\uB974"
+    Answer: 1
+  - Question: "\uC57C\uC2A4\uC624\uC758 \uD615\uC740?"
+    Selection:
+    - "\uB9C8\uC2A4\uD130 \uC774"
+    - "\uAC00\uB80C"
+    - "\uBCFC\uB9AC\uBCA0\uC5B4"
+    - "\uC624\uB978"
+    - "\uC694\uB124"
+    Answer: 5
+  OverWatchQuizzes: []
+  MapleQuizzes: []
+  TekkenQuizzes: []
+  SteamQuizzes: []
+  HearthStoneQuizzes: []
+  MinecraftQuizzes: []
