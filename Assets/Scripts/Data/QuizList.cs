@@ -10,7 +10,7 @@ namespace Data
     public class QuizList : ScriptableObject
     {
         public List<Quiz> LolQuizzes;
-        public List<Quiz> OverWatchQuizzes;
+        public List<Quiz> OverwatchQuizzes;
         public List<Quiz> MapleQuizzes;
         public List<Quiz> TekkenQuizzes;
         public List<Quiz> SteamQuizzes;
@@ -31,7 +31,7 @@ namespace Data
                     targetList = LolQuizzes;
                     break;
                 case QuizCategory.OVERWATCH:
-                    targetList = OverWatchQuizzes;
+                    targetList = OverwatchQuizzes;
                     break;
                 case QuizCategory.MAPLESTORY:
                     targetList = MapleQuizzes;

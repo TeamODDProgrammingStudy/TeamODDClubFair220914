@@ -97,6 +97,12 @@ public class QuizCreator : MonoBehaviour
         _uiTimer.StartTimer(10f);
         UpdateQuiz();
     }
+
+    public void Exit()
+    {
+        CurrentQuizList?.Clear();
+        _uiTimer.StopTimer();
+    }
     private void OnValidate()
     {
         _quizButtons = GetComponentsInChildren<QuizButton>();

@@ -714,6 +714,10 @@ PrefabInstance:
       propertyPath: Parent
       value: 
       objectReference: {fileID: 891647161}
+    - target: {fileID: 837866952721826734, guid: 4b4625daa521c914ca4730d435cfd0af, type: 3}
+      propertyPath: Category
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1363683444467672052, guid: 4b4625daa521c914ca4730d435cfd0af, type: 3}
       propertyPath: m_text
       value: "\uB9C8\uC778\uD06C\uB798\uD504\uD2B8"
@@ -860,6 +864,10 @@ PrefabInstance:
       propertyPath: Parent
       value: 
       objectReference: {fileID: 891647161}
+    - target: {fileID: 837866952721826734, guid: 4b4625daa521c914ca4730d435cfd0af, type: 3}
+      propertyPath: Category
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1363683444467672052, guid: 4b4625daa521c914ca4730d435cfd0af, type: 3}
       propertyPath: m_text
       value: "\uC2A4\uD300\uAC8C\uC784"
@@ -1490,6 +1498,42 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Button
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 891647161}
+        m_TargetAssemblyTypeName: Window, Assembly-CSharp
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 503162523}
+        m_TargetAssemblyTypeName: QuizCreator, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1042372935}
+        m_TargetAssemblyTypeName: Window, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &425541570
@@ -2682,6 +2726,18 @@ MonoBehaviour:
           m_StringArgument: Button
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 503162523}
+        m_TargetAssemblyTypeName: QuizCreator, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1017454228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3419,6 +3475,10 @@ PrefabInstance:
       propertyPath: Parent
       value: 
       objectReference: {fileID: 891647161}
+    - target: {fileID: 837866952721826734, guid: 4b4625daa521c914ca4730d435cfd0af, type: 3}
+      propertyPath: Category
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1363683444467672052, guid: 4b4625daa521c914ca4730d435cfd0af, type: 3}
       propertyPath: m_text
       value: "\uD558\uC2A4\uC2A4\uD1A4"
@@ -4709,7 +4769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca62aa305e95944bb84cf9301e20904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultQuizLength: 4
+  DefaultQuizLength: 5
   CurrentPlayerPoint: 0
   CurrentCategory: 0
   _quizCreator: {fileID: 503162523}
