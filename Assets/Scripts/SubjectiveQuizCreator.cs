@@ -4,6 +4,7 @@ using TMPro;
 using UI;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class SubjectiveQuizCreator : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SubjectiveQuizCreator : MonoBehaviour
     public List<SubjectiveQuiz> CurrentQuizList;
     public SubjectiveQuiz CurrentQuiz;
     [SerializeField] private TextMeshProUGUI Question;
+    [SerializeField] private TMP_InputField _answer;
     [SerializeField] private int CurrentQuestionLife = 2;
     [SerializeField] private AnswerPanel _answerPanel;
     [SerializeField] private EndPanel _endPanel;
@@ -57,6 +59,7 @@ public class SubjectiveQuizCreator : MonoBehaviour
     public void ResetCondition()
     {
         CurrentQuestionLife = DefaultLifeCount;
+        _answer.text = string.Empty;
         if (CurrentQuizList.Count <=0) {
             EndGame();
             return;
