@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     public int DefaultQuizLength = 9;
     public int CurrentPlayerPoint = 0;
     public QuizCategory CurrentCategory = QuizCategory.LOL;
-    [SerializeField] private QuizCreator _quizCreator;
-    [SerializeField] private QuizList QuizLists;
+    [SerializeField] private SubjectiveQuizCreator _subjectiveQuizCreator;
+    [SerializeField] private SubjectiveQuizList _subjectiveQuizList;
     public void Start() {
         Current = this;
     }
@@ -24,8 +24,9 @@ public class GameManager : MonoBehaviour
     public void StartGame(QuizCategory category)
     {
         CurrentCategory = category;
-        var quizList = QuizLists.GetCategoryQuizList(category,DefaultQuizLength);
-        _quizCreator.SetQuizList(quizList);
+        //var quizList = QuizLists.GetCategoryQuizList(category,DefaultQuizLength);
+        var subjectiveQuiz = _subjectiveQuizList.GetCategoryQuizList(category, DefaultQuizLength);
+        _subjectiveQuizCreator.SetQuizList(subjectiveQuiz);
     }
 }
 public enum QuizCategory

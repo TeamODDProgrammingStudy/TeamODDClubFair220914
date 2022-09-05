@@ -1,25 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Data
 {
-    [CreateAssetMenu(fileName = "QuizList",menuName = "Data/QuizList")]
-    public class QuizList : ScriptableObject
+    [CreateAssetMenu(fileName = "SubjectiveQuizList",menuName = "Data/SubjectiveQuizList")]
+    public class SubjectiveQuizList : ScriptableObject
     {
-        public List<Quiz> LolQuizzes;
-        public List<Quiz> OverwatchQuizzes;
-        public List<Quiz> MapleQuizzes;
-        public List<Quiz> TekkenQuizzes;
-        public List<Quiz> SteamQuizzes;
-        public List<Quiz> HearthStoneQuizzes;
-        public List<Quiz> MinecraftQuizzes;
-        public List<Quiz> GetCategoryQuizList(QuizCategory category,int length)
+        //public QuizList TargetData;
+        public List<SubjectiveQuiz> LolQuizzes;
+        public List<SubjectiveQuiz> OverwatchQuizzes;
+        public List<SubjectiveQuiz> MapleQuizzes;
+        public List<SubjectiveQuiz> TekkenQuizzes;
+        public List<SubjectiveQuiz> SteamQuizzes;
+        public List<SubjectiveQuiz> HearthStoneQuizzes;
+        public List<SubjectiveQuiz> MinecraftQuizzes;
+        
+        public List<SubjectiveQuiz> GetCategoryQuizList(QuizCategory category,int length)
         {
-            var result = new List<Quiz>();
-            List<Quiz> targetList = new List<Quiz>();
+            var result = new List<SubjectiveQuiz>();
+            List<SubjectiveQuiz> targetList = new List<SubjectiveQuiz>();
             switch (category)
             {
                 case QuizCategory.LOL:
