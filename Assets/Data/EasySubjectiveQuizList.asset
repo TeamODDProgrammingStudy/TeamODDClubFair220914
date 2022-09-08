@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5514abc3d704524a4c87a060df0bee4, type: 3}
+  m_Name: EasySubjectiveQuizList
+  m_EditorClassIdentifier: 
+  LolQuizzes:
+  - Question: "\uC815\uB9D0 \uC26C\uC6B4 \uBB38\uC81C 1"
+    Answer: "\uC815\uB9D0 \uC26C\uC6B4 \uB2F5 1"
+  - Question: "\uC815\uB9D0 \uC26C\uC6B4 \uBB38\uC81C 2"
+    Answer: "\uC815\uB9D0 \uC26C\uC6B4 \uB2F5 2"
+  - Question: "\uC815\uB9D0 \uC26C\uC6B4 \uBB38\uC81C 3"
+    Answer: "\uC815\uB9D0 \uC26C\uC6B4 \uB2F5 3"
+  - Question: "\uC815\uB9D0 \uC26C\uC6B4 \uBB38\uC81C 4"
+    Answer: "\uC815\uB9D0 \uC26C\uC6B4 \uB2F5 4"
+  OverwatchQuizzes: []
+  MapleQuizzes: []
+  TekkenQuizzes: []
+  SteamQuizzes: []
+  HearthStoneQuizzes: []
+  MinecraftQuizzes: []

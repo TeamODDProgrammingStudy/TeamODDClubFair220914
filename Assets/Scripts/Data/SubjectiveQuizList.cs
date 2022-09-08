@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 
 namespace Data
@@ -45,7 +46,7 @@ namespace Data
             }
             if (targetList.Count <= length)
             {
-                return targetList;
+                return targetList.GetRange(0,targetList.Count);
             }
             while (result.Count < length)
             {

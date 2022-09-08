@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd0e6db8d9f461e831909ef3d0950b6, type: 3}
+  m_Name: SubjectiveQuizListWithDifficulty
+  m_EditorClassIdentifier: 
+  Difficult: {fileID: 11400000, guid: ceea7b2d79ae4da4db1c8c21a0e235db, type: 2}
+  Normal: {fileID: 11400000, guid: d2ae7c8ad42052642b4542987b4568b7, type: 2}
+  Easy: {fileID: 11400000, guid: 0382a8f7237384c44b25bf1b05ba5cbc, type: 2}
