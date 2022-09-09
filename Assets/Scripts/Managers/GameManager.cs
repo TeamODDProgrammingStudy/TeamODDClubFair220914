@@ -9,8 +9,9 @@ namespace Managers
     public class GameManager : MonoBehaviour
     {
         public static GameManager Current;
-        public int DefaultQuizLength = 9;
+        public int DefaultQuizLength = 1;
         public int CurrentPlayerPoint = 0;
+        public int CurrentPlayerDifficulty = 1;
         public QuizCategory CurrentCategory = QuizCategory.LOL;
         [SerializeField] private SubjectiveQuizCreator _subjectiveQuizCreator;
         [SerializeField] private SubjectiveQuizListWithDifficulty _subjectiveQuizListWithDifficulty;
@@ -20,18 +21,27 @@ namespace Managers
         public void ClearPlayerData()
         {
             CurrentPlayerPoint = 0;
+            CurrentPlayerDifficulty = 1;
             CurrentCategory = QuizCategory.LOL;
         }
 
-        public void StartGame(int difficulty = 1)
+        public void StartGame()
         {
-            difficulty = (difficulty < 1 ? 1 : difficulty) > 3 ? 3 : difficulty;
-            //var quizList = QuizLists.GetCategoryQuizList(category,DefaultQuizLength);
             var subjectiveQuiz = _subjectiveQuizListWithDifficulty
-                .GetCategoryQuizListWithDifficulty(CurrentCategory, DefaultQuizLength,difficulty);
+                .GetCategoryQuizListWithDifficulty(CurrentCategory, DefaultQuizLength,CurrentPlayerDifficulty);
             _subjectiveQuizCreator.SetQuizList(subjectiveQuiz);
         }
 
+        public void SetDifficulty(int difficulty)
+        {
+            CurrentPlayerDifficulty = difficulty;
+        }
+        public void GoToNextLevel()
+        {
+            CurrentPlayerPoint = 0;
+            CurrentCategory = QuizCategory.LOL;
+            CurrentPlayerDifficulty++;
+        }
         public void SelectCategory(QuizCategory category)
         {
             CurrentCategory = category;

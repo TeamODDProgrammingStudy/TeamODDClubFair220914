@@ -43,7 +43,9 @@ public class SubjectiveQuizCreator : MonoBehaviour
         OnCorrectAnswerClicked.Invoke();
         GameManager.Current.CurrentPlayerPoint++;
         //정답을 맞췄으므로 정답창 띄우기
-        _answerPanel.Success(CurrentQuiz.Answer);
+        /*
+        _answerPanel.Init(CurrentQuiz.Answer,_answer.text);
+        */
     }
     //틀렸을 경우 틀림 이벤트 출력
     public void Wrong()
@@ -51,10 +53,17 @@ public class SubjectiveQuizCreator : MonoBehaviour
         OnWrongAnswerClicked.Invoke();
         CurrentQuestionLife--;
         //라이프가 0보다 작을 경우 오답창 띄우기
+        /*
         if (CurrentQuestionLife <=0) {
-            _answerPanel.Failed(CurrentQuiz.Answer);
+            _answerPanel.Init(CurrentQuiz.Answer,_answer.text);
             return;
         }
+        */
+    }
+
+    public void CheckAnswer()
+    {
+        _answerPanel.Init(CurrentQuiz.Answer,_answer.text);
     }
 
     public void ResetCondition()
