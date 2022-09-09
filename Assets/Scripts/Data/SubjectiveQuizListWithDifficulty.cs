@@ -8,13 +8,14 @@ namespace Data
     [CreateAssetMenu(fileName = "SubjectiveQuizListWithDifficulty",menuName = "Data/SubjectiveQuizListWithDifficulty")]
     public class SubjectiveQuizListWithDifficulty : ScriptableObject
     {
-        public SubjectiveQuizList Difficult;
+        public SubjectiveQuizList Hard;
         public SubjectiveQuizList Normal;
         public SubjectiveQuizList Easy;
 
         public List<SubjectiveQuiz> GetCategoryQuizListWithDifficulty(QuizCategory category,int length, int difficulty)
         {
             SubjectiveQuizList target = Easy;
+            Debug.Log(difficulty);
             switch (difficulty)
             {
                 case 1:
@@ -24,7 +25,7 @@ namespace Data
                     target = Normal;
                     break;
                 case 3:
-                    target = Difficult;
+                    target = Hard;
                     break;
             }
             return target.GetCategoryQuizList(category, length);
