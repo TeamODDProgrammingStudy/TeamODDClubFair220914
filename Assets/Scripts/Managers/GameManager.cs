@@ -47,6 +47,11 @@ namespace Managers
         {
             CurrentCategory = category;
         }
+
+        public void ExitGame()
+        {
+            Application.Quit();
+        }
     }
     public enum QuizCategory
     {

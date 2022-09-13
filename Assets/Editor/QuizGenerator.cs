@@ -44,6 +44,7 @@ namespace Editor
 
         private List<SubjectiveQuiz> ParsData(string fileName)
         {
+            Debug.Log(fileName);
             var path = $"{FilePath}/{fileName}";
             if (!File.Exists(path)) {
                 Debug.LogError($"{fileName} not found.");
