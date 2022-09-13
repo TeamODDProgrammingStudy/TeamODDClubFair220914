@@ -15,7 +15,8 @@ namespace Data
         public List<SubjectiveQuiz> SteamQuizzes;
         public List<SubjectiveQuiz> HearthStoneQuizzes;
         public List<SubjectiveQuiz> MinecraftQuizzes;
-        
+        public List<SubjectiveQuiz> ValorantQuizzes;
+
         public List<SubjectiveQuiz> GetCategoryQuizList(QuizCategory category,int length)
         {
             var result = new List<SubjectiveQuiz>();
@@ -42,6 +43,9 @@ namespace Data
                     break;
                 case QuizCategory.MINECRAFT:
                     targetList = MinecraftQuizzes;
+                    break;
+                case QuizCategory.VALOLANT:
+                    targetList = ValorantQuizzes;
                     break;
             }
             if (targetList.Count <= length)

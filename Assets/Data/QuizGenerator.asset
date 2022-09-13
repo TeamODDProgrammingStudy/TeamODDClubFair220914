@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed650ee1602e4f9383cf24d4f75d0da6, type: 3}
   m_Name: QuizGenerator
   m_EditorClassIdentifier: 
-  FilePath: C:\Users\Postive\Desktop\Quiz\EASY
-  TargetList: {fileID: 11400000, guid: 0382a8f7237384c44b25bf1b05ba5cbc, type: 2}
+  FilePath: C:\Users\posti\Desktop\Quiz\HARD
+  TargetList: {fileID: 11400000, guid: ceea7b2d79ae4da4db1c8c21a0e235db, type: 2}
   _lolQuizUpdate: 1
-  _overwatchQuizUpdate: 0
+  _overwatchQuizUpdate: 1
   _maplestoryQuizUpdate: 1
   _tekkenQuizUpdate: 0
   _steamQuizUpdate: 0
-  _hearthstoneQuizUpdate: 1
+  _hearthstoneQuizUpdate: 0
   _minecraftQuizUpdate: 1
+  _valorantQuizUpdate: 1

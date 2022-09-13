@@ -18,6 +18,7 @@ namespace Editor
         [SerializeField] private bool _steamQuizUpdate = false;
         [SerializeField] private bool _hearthstoneQuizUpdate = false;
         [SerializeField] private bool _minecraftQuizUpdate = false;
+        [SerializeField] private bool _valorantQuizUpdate = false;
         private const string LOL_FILE = "LOL";
         private const string OVERWATCH_FILE = "OVERWATCH";
         private const string MAPLESTORY_FILE = "MAPLESTORY";
@@ -25,33 +26,20 @@ namespace Editor
         private const string STEAM_FILE = "STEAM";
         private const string HEARTHSTONE_FILE = "HEARTHSTONE";
         private const string MINECRAFT_FILE = "MINECRAFT";
+        private const string VALORANT_FILE = "VALORANT";
         private const string FILE_TYPE = "txt";
 
 
         public void Generate()
         {
-            if (_lolQuizUpdate) {
-                TargetList.LolQuizzes = ParsData($"{LOL_FILE}.{FILE_TYPE}");
-            }
-            if (_overwatchQuizUpdate) {
-                TargetList.OverwatchQuizzes = ParsData($"{OVERWATCH_FILE}.{FILE_TYPE}");
-            }
-            if (_maplestoryQuizUpdate) {
-                TargetList.MapleQuizzes = ParsData($"{MAPLESTORY_FILE}.{FILE_TYPE}");
-            }
-            if (_tekkenQuizUpdate) {
-                TargetList.TekkenQuizzes = ParsData($"{TEKKEN_FILE}.{FILE_TYPE}");
-            }
-            if (_steamQuizUpdate) {
-                TargetList.SteamQuizzes = ParsData($"{STEAM_FILE}.{FILE_TYPE}");
-            }
-            if (_hearthstoneQuizUpdate) {
-                TargetList.HearthStoneQuizzes = ParsData($"{HEARTHSTONE_FILE}.{FILE_TYPE}");
-            }
-            if (_minecraftQuizUpdate) {
-                TargetList.MinecraftQuizzes = ParsData($"{MINECRAFT_FILE}.{FILE_TYPE}");
-            }
-            
+            TargetList.LolQuizzes = _lolQuizUpdate ? ParsData($"{LOL_FILE}.{FILE_TYPE}") : new List<SubjectiveQuiz>();
+            TargetList.OverwatchQuizzes = _overwatchQuizUpdate ? ParsData($"{OVERWATCH_FILE}.{FILE_TYPE}") : new List<SubjectiveQuiz>();
+            TargetList.MapleQuizzes = _maplestoryQuizUpdate ? ParsData($"{MAPLESTORY_FILE}.{FILE_TYPE}") : new List<SubjectiveQuiz>();
+            TargetList.TekkenQuizzes = _tekkenQuizUpdate ? ParsData($"{TEKKEN_FILE}.{FILE_TYPE}") : new List<SubjectiveQuiz>();
+            TargetList.SteamQuizzes = _steamQuizUpdate ? ParsData($"{STEAM_FILE}.{FILE_TYPE}") : new List<SubjectiveQuiz>();
+            TargetList.HearthStoneQuizzes = _hearthstoneQuizUpdate ? ParsData($"{HEARTHSTONE_FILE}.{FILE_TYPE}") : new List<SubjectiveQuiz>();
+            TargetList.MinecraftQuizzes = _minecraftQuizUpdate ? ParsData($"{MINECRAFT_FILE}.{FILE_TYPE}") : new List<SubjectiveQuiz>();
+            TargetList.ValorantQuizzes = _valorantQuizUpdate ? ParsData($"{VALORANT_FILE}.{FILE_TYPE}") : new List<SubjectiveQuiz>();
         }
 
         private List<SubjectiveQuiz> ParsData(string fileName)

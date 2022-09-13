@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Data;
+using UI;
 using UnityEngine;
 
 namespace Managers
@@ -55,6 +56,7 @@ namespace Managers
         TEKKEN = 3,
         STEAM = 4,
         HEARTHSTONE = 5,
-        MINECRAFT = 6
+        MINECRAFT = 6,
+        VALOLANT = 7,
     }
 }
