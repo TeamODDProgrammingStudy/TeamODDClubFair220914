@@ -24,12 +24,18 @@
 <img src="./ArtResult/Banner.jpg">
 
 - #### 동아리 부스 명함 결과물
-<img src="./ArtResult/CardFront.png">
-<img src="./ArtResult/CardFront.png">
+<figure class="half">
+    <img src="./ArtResult/CardFront.png">
+    <img src="./ArtResult/CardFront.png">
+</figure>
+
 
 - #### 동아리 부스 포스터 결과물
-<img src="./ArtResult/Poster01.png">
-<img src="./ArtResult/Poster02.png">
+
+<figure class="half">
+    <img width="270" height="410" src="./ArtResult/Poster01.png">
+    <img width="270" height="410" src="./ArtResult/Poster02.png">
+</figure>
 
 ### 참여형 퀴즈 게임 방안
 
