@@ -1245,7 +1245,7 @@ MonoBehaviour:
   AnswerDescriptionText: {fileID: 1316311301}
 --- !u!95 &252422414
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1262,7 +1262,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!225 &252422415
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2949,7 +2950,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &535871492
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2966,7 +2967,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!225 &535871493
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4223,7 +4225,7 @@ CanvasGroup:
   m_IgnoreParentGroups: 0
 --- !u!95 &891647163
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4240,7 +4242,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &930965910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9053,8 +9056,8 @@ MonoBehaviour:
   _onWindowClose:
     m_PersistentCalls:
       m_Calls: []
-  _successText: "\uB09C\uC774\uB3C4 \uD604\uC7AC \uB09C\uC774\uB3C4\n\uB2E4\uC74C
-    \uB09C\uC774\uB3C4\uC758 \uBB38\uC81C\uC5D0 \uB3C4\uC804\uD558\uC2E4 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  _successText: "\uB2E4\uC74C \uB09C\uC774\uB3C4\uC758 \uBB38\uC81C\uC5D0 \uB3C4\uC804\uD558\uC2E4
+    \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   _failedText: "\uC544\uC27D\uC2B5\uB2C8\uB2E4.\n\uBB38\uC81C\uB97C \uB9DE\uCD94\uC9C0
     \uBABB\uD558\uC600\uC2B5\uB2C8\uB2E4."
   _finalText: "\uCD95\uD558\uB4DC\uB9BD\uB2C8\uB2E4.\n\uBB38\uC81C\uB97C \uBAA8\uB450
@@ -9063,7 +9066,7 @@ MonoBehaviour:
   GoToNextLevelButton: {fileID: 108867601}
 --- !u!95 &1813031249
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9080,7 +9083,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!225 &1813031250
 CanvasGroup:
   m_ObjectHideFlags: 0
